@@ -26,3 +26,4 @@ When installing "Auto Build Marlin" you'll also be prompted to install the [Plat
   ![](https://github.com/MarlinFirmware/AutoBuildMarlin/raw/master/img/U_small.png)|Start **Marlin Upload** to install Marlin on your board
   ![](https://github.com/MarlinFirmware/AutoBuildMarlin/raw/master/img/T_small.png)|Start **Marlin Upload (traceback)** to install Marlin with debugging
   ![](https://github.com/MarlinFirmware/AutoBuildMarlin/raw/master/img/C_small.png)|Start **Marlin Clean** to delete old build files
+  ![](https://github.com/MarlinFirmware/AutoBuildMarlin/raw/master/img/K_small.png)|**Open Configurator** to edit Marlin settings with a UI

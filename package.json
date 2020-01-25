@@ -38,9 +38,10 @@
   ],
   "activationEvents": [
     "onCommand:mfbuild",
-    "onCommand:mfclean",
     "onCommand:mfupload",
-    "onCommand:mftraceback"
+    "onCommand:mftraceback",
+    "onCommand:mfclean",
+    "onCommand:mfconfig"
   ],
   "main": "./extension",
   "contributes": {
@@ -68,7 +69,7 @@
     "commands": [
       {
         "command": "mfbuild",
-        "title": "Build",
+        "title": "Marlin: Build",
         "icon": {
           "light": "resources/B48x48_light.svg",
           "dark": "resources/B48x48_dark.svg"
@@ -76,7 +77,7 @@
       },
       {
         "command": "mfupload",
-        "title": "Upload",
+        "title": "Marlin: Upload",
         "icon": {
           "light": "resources/U48x48_light.svg",
           "dark": "resources/U48x48_dark.svg"
@@ -84,7 +85,7 @@
       },
       {
         "command": "mftraceback",
-        "title": "Upload (traceback)",
+        "title": "Marlin: Upload (traceback)",
         "icon": {
           "light": "resources/T48x48_light.svg",
           "dark": "resources/T48x48_dark.svg"
@@ -92,10 +93,19 @@
       },
       {
         "command": "mfclean",
-        "title": "Clean",
+        "title": "Marlin: Clean",
         "icon": {
           "light": "resources/C48x48_light.svg",
           "dark": "resources/C48x48_dark.svg"
+        }
+      },
+      {
+        // TODO: Make "config" Icon
+        "command": "mfconfig",
+        "title": "Marlin: Configure",
+        "icon": {
+          "light": "resources/K48x48_light.svg",
+          "dark": "resources/K48x48_dark.svg"
         }
       }
     ],
@@ -120,6 +130,11 @@
           "command": "mfclean",
           "group": "navigation@4",
           "when": "view == autoBuildView || view == marlinView"
+        },
+        {
+          "command": "mfconfig",
+          "group": "navigation@5",
+          "when": "view == marlinView"
         }
       ]
     }
